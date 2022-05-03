@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
     <script src="scirpt.js" defer></script>
 
     <title>sign-up form</title>
@@ -37,33 +38,33 @@
             <form action="">
                 <div class="input-section">
                     <div>
+                        <label for="username" >Username*</label>
+                        <input type="text" id="username" minlength="4" maxlength="15" pattern="[a-zA-Z]+([A-Za-z]\d*)" required>
+                    </div>
+
+                    <div>
                         <label for="name" >Name</label>
-                        <input type="text" id="name">
+                        <input type="text" id="name" pattern="([a-zA-Z]*[a-z]){3,25}" maxlength="25">
                     </div>
 
                     <div>
-                        <label for="username" >Username</label>
-                        <input type="text" id="username">
-                    </div>
-
-                    <div>
-                        <label for="email" >Email</label>
-                        <input type="email" id="email">
+                        <label for="email" >Email*</label>
+                        <input type="email" id="email" pattern="[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.com" required>
                     </div>
 
                     <div>
                         <label for="phone">Phone</label>
-                        <input type="tel" id="phone">
+                        <input type="tel" id="phone" minlength="9" maxlength="9">
                     </div>
 
                     <div>
-                        <label for="password">password</label>
-                        <input type="password" id="password">
+                        <label for="password">password*</label>
+                        <input type="password" id="password" required>
                     </div>
 
                     <div>
-                        <label for="confirm-password">Confirm password</label>
-                        <input type="password" id="confirm-password">
+                        <label for="confirm-password">Confirm password*</label>
+                        <input type="password" id="confirm-password" required>
                     </div>
                 </div>
 
