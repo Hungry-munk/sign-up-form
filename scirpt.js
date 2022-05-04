@@ -5,9 +5,14 @@ const Phone = document.getElementById('phone')
 const Password = document.getElementById('password')
 const ConfirmPassword = document.getElementById('confirm-password')
 
-Email.addEventListener('input',event =>{
-    if (Email.validity.patternMismatch){
-        Email.setCustomValidity('enter a valid email address');
-        Email.reportValidity();
+const EMAIL_REGEX = /[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.com/g
+let typingtimer;
+
+Email.addEventListener('input', ()=>{
+    clearTimeout(typingtimer)
+    if (Email.value){
+        typingtimer = setTimeout(()=>{
+            console.log(Email.value,"\n this fucking working\n",)
+        }, 2000)
     }
-});
+})
