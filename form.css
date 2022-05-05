@@ -1,1 +1,4 @@
-input
+input:focus {
+    transition: ease-in 400ms;
+    background-color: rgba(209, 209, 209, 0.6);
+}

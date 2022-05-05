@@ -46,9 +46,11 @@ main{
     margin-bottom: 5vh;
 }
 
-section{
+section {
     border-radius: 0.5rem;
-
+}
+input {
+    border-radius: 8px
 }
 
 section:last-child {
