@@ -1,4 +1,14 @@
 input:focus {
-    transition: ease-in 400ms;
+    outline: none;
+    transition: ease-in 300ms;
     background-color: rgba(209, 209, 209, 0.6);
+}
+
+input.valid{
+    border: 3px solid green;
+
+}
+
+input.invalid{
+    border: 3px solid red;
 }

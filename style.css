@@ -13,6 +13,10 @@
 
     --content-shadow: aliceblue;
     --image-shadow: orange;
+
+    --background-purple : #4e03fc;
+    --background-orange : #e66465;
+
 }
 
 body,
@@ -34,7 +38,7 @@ body{
     justify-content: center;
     height: 100vh;
 
-    background: linear-gradient(144deg , #4e03fc 30%, #e66465 );
+    background: linear-gradient(144deg , var(--background-purple) 30%, var(--background-orange) );
 }
 
 main{
@@ -50,7 +54,10 @@ section {
     border-radius: 0.5rem;
 }
 input {
-    border-radius: 8px
+    transition: ease-in 300ms;
+    background-clip:padding-box ;
+    border: 3px solid transparent;
+    border-radius: 8px;
 }
 
 section:last-child {
