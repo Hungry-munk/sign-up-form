@@ -16,7 +16,6 @@
 
     --background-purple : #4e03fc;
     --background-orange : #e66465;
-
 }
 
 body,
@@ -58,6 +57,11 @@ input {
     background-clip:padding-box ;
     border: 3px solid transparent;
     border-radius: 8px;
+}
+
+#submit-btn{
+    border: 3px transparent solid ;
+    cursor:not-allowed 
 }
 
 section:last-child {
@@ -146,7 +150,7 @@ img{
 
 footer {
    position: absolute;
-   bottom: 5px;
+   bottom: 2px;
 }
 
 
