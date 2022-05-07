@@ -149,7 +149,8 @@ img{
 }
 
 footer {
-   bottom: 2px;
+    position: absolute;
+    bottom: 2px;
 }
 
 
